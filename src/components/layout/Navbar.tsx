@@ -22,12 +22,12 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 max-w-screen-2xl items-center">
-        <div className="mr-4 flex">
-          <Link className="mr-6 flex items-center space-x-2" to="/">
+        <div className="flex">
+          <Link className="flex items-center gap-2" to="/">
             <Lightbulb size={24} className="text-maharat-blue" />
             <span className="hidden font-bold sm:inline-block text-xl">مهارات</span>
           </Link>
-          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <nav className="hidden md:flex items-center gap-6 text-sm font-medium mr-6">
             <Link
               className="transition-colors hover:text-foreground/80 text-foreground/60 flex items-center gap-1"
               to="/skills"
@@ -51,8 +51,8 @@ export function Navbar() {
             </Link>
           </nav>
         </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="hidden md:flex items-center space-x-2">
+        <div className="flex flex-1 items-center justify-end gap-2">
+          <nav className="hidden md:flex items-center gap-2">
             <Button asChild variant="outline">
               <Link to="/login">تسجيل دخول</Link>
             </Button>
@@ -67,10 +67,10 @@ export function Navbar() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="left">
+            <SheetContent side="right" className="w-[80vw] max-w-xs">
               <SheetHeader>
                 <SheetTitle className="flex items-center">
-                  <Lightbulb size={24} className="text-maharat-blue mr-2" />
+                  <Lightbulb size={24} className="text-maharat-blue ml-2" />
                   مهارات
                 </SheetTitle>
                 <SheetDescription>
