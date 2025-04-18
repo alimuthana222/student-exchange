@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+   base: "/student-exchange/", 
   plugins: [
     react(),
     mode === 'development' &&
@@ -21,8 +22,5 @@ export default defineConfig(({ mode }) => ({
     },
   },
 })
-                           export default defineConfig({
-  plugins: [react()],
-  base: "/student-exchange/", 
-})
+
 );
