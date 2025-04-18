@@ -7,6 +7,7 @@ import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 const Skills = lazy(() => import("./pages/Skills"));
 const TimeBank = lazy(() => import("./pages/TimeBank"));
@@ -23,6 +24,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
           <Route 
             path="/skills" 
             element={
