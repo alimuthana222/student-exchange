@@ -6,12 +6,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-
-const queryClient = new QueryClient();
+import Register from "./pages/Register";
 
 const Skills = lazy(() => import("./pages/Skills"));
 const TimeBank = lazy(() => import("./pages/TimeBank"));
 const Marketplace = lazy(() => import("./pages/Marketplace"));
+
+const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -21,6 +22,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/register" element={<Register />} />
           <Route 
             path="/skills" 
             element={
