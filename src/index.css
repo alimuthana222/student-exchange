@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -13,17 +13,17 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 199 89% 48%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 25 95% 53%;
+    --secondary-foreground: 210 40% 98%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 258 90% 66%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -97,5 +97,17 @@
 
   body {
     @apply bg-background text-foreground;
+    direction: rtl;
+  }
+
+  /* RTL support for left/right margins and paddings */
+  .mr-1, .mr-2, .mr-3, .mr-4, .mr-5, .mr-6, .mr-8, .ml-1, .ml-2, .ml-3, .ml-4, .ml-5, .ml-6, .ml-8 {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .pr-1, .pr-2, .pr-3, .pr-4, .pr-5, .pr-6, .pr-8, .pl-1, .pl-2, .pl-3, .pl-4, .pl-5, .pl-6, .pl-8 {
+    padding-left: unset;
+    padding-right: unset;
   }
 }

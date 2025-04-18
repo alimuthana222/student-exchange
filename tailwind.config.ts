@@ -44,6 +44,14 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
+				maharat: {
+					blue: '#0EA5E9',
+					orange: '#F97316',
+					purple: '#8B5CF6',
+					teal: '#14B8A6',
+					gray: '#64748B',
+					light: '#F8FAFC',
+				},
 				popover: {
 					DEFAULT: 'hsl(var(--popover))',
 					foreground: 'hsl(var(--popover-foreground))'
